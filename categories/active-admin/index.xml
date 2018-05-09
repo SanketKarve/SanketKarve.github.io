@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active Admin on Sanketkumar Karve</title>
+    <link>https://www.sanketkarve.com/categories/active-admin/</link>
+    <description>Recent content in Active Admin on Sanketkumar Karve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.sanketkarve.com/categories/active-admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create active admin custom forms in Ruby on Rails</title>
+      <link>https://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</link>
+      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</guid>
+      <description>Active Admin is great gem for administration framework for Ruby on Rails applications.
+Here you can find documentation to setup in you Rails applications. Today, Our goal is to create a custom forms in Active Admin. We will create a User and Team model. When a Team is created a user is create along with it and assigned to team. If you are using devise gem and already have existing User model that you can skip the following command to create User model.</description>
+    </item>
+    
+  </channel>
+</rss>

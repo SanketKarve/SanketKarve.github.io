@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue.js on Sanketkumar Karve</title>
+    <link>https://www.sanketkarve.com/categories/vue.js/</link>
+    <description>Recent content in Vue.js on Sanketkumar Karve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.sanketkarve.com/categories/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shareito</title>
+      <link>https://www.sanketkarve.com/projects/shareito/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sanketkarve.com/projects/shareito/</guid>
+      <description>beta.shareito.com Oct 2017 - Present Shareito help employee to onboarding projects and getting access to resources in less amount of time. Shareito is integrated with many popular applications like G-Suite, GitHub, AWS, Office- 365 and Bitbucket.</description>
+    </item>
+    
+  </channel>
+</rss>

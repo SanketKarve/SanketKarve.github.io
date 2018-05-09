@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/projects/leadshuttle/</loc>
+    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/blog/webpack-bundle-size-reduce/</loc>
+    <lastmod>2018-03-12T08:54:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/projects/shareito/</loc>
+    <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/blog/formester-setup/</loc>
+    <lastmod>2017-08-06T20:25:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/blog/form-builder-list/</loc>
+    <lastmod>2017-08-06T01:46:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/blog/install-ubuntu-software/</loc>
+    <lastmod>2017-08-05T18:46:26+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/projects/formester/</loc>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/api/</loc>
+    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/active-admin/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/blog/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/blog/</loc>
+    <lastmod>2017-08-06T20:25:02+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/</loc>
+    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/forms/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/projects/</loc>
+    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/ruby-on-rails/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/tags/tutorial/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/ubuntu/</loc>
+    <lastmod>2017-08-05T18:46:26+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/vue/</loc>
+    <lastmod>2018-03-12T08:54:20+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/vue.js/</loc>
+    <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/web-development/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sanketkarve.com/categories/webpack/</loc>
+    <lastmod>2018-03-12T08:54:20+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

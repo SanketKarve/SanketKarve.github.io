@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on Sanketkumar Karve</title>
+    <link>https://www.sanketkarve.com/categories/ubuntu/</link>
+    <description>Recent content in Ubuntu on Sanketkumar Karve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Aug 2017 18:46:26 +0530</lastBuildDate>
+    
+	<atom:link href="https://www.sanketkarve.com/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things Developer Should Do After Installing Ubuntu</title>
+      <link>https://www.sanketkarve.com/blog/install-ubuntu-software/</link>
+      <pubDate>Sat, 05 Aug 2017 18:46:26 +0530</pubDate>
+      
+      <guid>https://www.sanketkarve.com/blog/install-ubuntu-software/</guid>
+      <description>You have freshly install Ubuntu on you system and thinking that there are lot of software and packages you want to install to get back to work ASAP. Here is quick checklist for the Developer for all software and packages you will need. &amp;nbsp;
+1. Update and Upgrade On fresh installation many software and packages does not provide latest updates, which you can obtain by using sudo apt-get update command.</description>
+    </item>
+    
+  </channel>
+</rss>
