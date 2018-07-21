@@ -2,31 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Sanketkumar Karve</title>
-    <link>https://www.sanketkarve.com/blog/</link>
+    <link>http://www.sanketkarve.com/blog/</link>
     <description>Recent content in Blog on Sanketkumar Karve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jul 2018 15:56:43 +0530</lastBuildDate>
     
-	<atom:link href="https://www.sanketkarve.com/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.sanketkarve.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Integrate Vue.js with Rails 5 application</title>
+      <link>http://www.sanketkarve.com/blog/vue-rails-integration/</link>
+      <pubDate>Sat, 21 Jul 2018 15:56:43 +0530</pubDate>
+      
+      <guid>http://www.sanketkarve.com/blog/vue-rails-integration/</guid>
+      <description>To start with Vue.js and Rails 5 integration let have a quick overview of what we are going to do.
+Rails works on Model-View-Controller (MVC) Architecture. Here we will focus on View(V) part of rails. By default, rails support HTML, CSS, and JS but we want to integrate responsive framework to leverage its benefit and make our view more component based. Vue.js will only take care of your view layer.</description>
+    </item>
+    
+    <item>
       <title>Create active admin custom forms in Ruby on Rails</title>
-      <link>https://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</link>
+      <link>http://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</link>
       <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</guid>
+      <guid>http://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</guid>
       <description>Active Admin is great gem for administration framework for Ruby on Rails applications.
 Here you can find documentation to setup in you Rails applications. Today, Our goal is to create a custom forms in Active Admin. We will create a User and Team model. When a Team is created a user is create along with it and assigned to team. If you are using devise gem and already have existing User model that you can skip the following command to create User model.</description>
     </item>
     
     <item>
       <title>Reduce Webpack Bundle Size in Vue </title>
-      <link>https://www.sanketkarve.com/blog/webpack-bundle-size-reduce/</link>
+      <link>http://www.sanketkarve.com/blog/webpack-bundle-size-reduce/</link>
       <pubDate>Mon, 12 Mar 2018 08:54:20 +0530</pubDate>
       
-      <guid>https://www.sanketkarve.com/blog/webpack-bundle-size-reduce/</guid>
+      <guid>http://www.sanketkarve.com/blog/webpack-bundle-size-reduce/</guid>
       <description>I have been working on my new Vue application and It was working great until I build my application with command npm run build . I was unhappy with the build size as overall size is 8MB and initial load is 800Kb. It seem to much too me and want to reduce the bundle size by removing unnecessary packages.
 
 Let&amp;rsquo;s check how we can analyze the issue.
@@ -35,28 +45,28 @@ Let&amp;rsquo;s check how we can analyze the issue.
     
     <item>
       <title>How to use Formester and set up form on your website</title>
-      <link>https://www.sanketkarve.com/blog/formester-setup/</link>
+      <link>http://www.sanketkarve.com/blog/formester-setup/</link>
       <pubDate>Sun, 06 Aug 2017 20:25:02 +0530</pubDate>
       
-      <guid>https://www.sanketkarve.com/blog/formester-setup/</guid>
+      <guid>http://www.sanketkarve.com/blog/formester-setup/</guid>
       <description>It is difficult to integrate and maintain data on backend using programming languages like PHP and Javascript, and we all agree to that. There is always something more which we need and don’t have time to build. This is the right time to make a call and use a managed service, which will do all of this for us at a very minimal charge. Form Builders are the easiest way to deal with such issues to save time and help us focus on more important things.</description>
     </item>
     
     <item>
       <title>List of Trending Form Builder(backend) 2017</title>
-      <link>https://www.sanketkarve.com/blog/form-builder-list/</link>
+      <link>http://www.sanketkarve.com/blog/form-builder-list/</link>
       <pubDate>Sun, 06 Aug 2017 01:46:18 +0530</pubDate>
       
-      <guid>https://www.sanketkarve.com/blog/form-builder-list/</guid>
+      <guid>http://www.sanketkarve.com/blog/form-builder-list/</guid>
       <description>It&amp;rsquo;s quite challenging to find a suitable product as per your need and budget. Recently my client asked me to build a landing page for their new product. This page will create an email list for all beta users. I thought it would be a very easy thing to do but as I went deep into it, I realized all the wheels I’ll have to reinvent. Thing like duplications, validation, spam protection and a lot more.</description>
     </item>
     
     <item>
       <title>Things Developer Should Do After Installing Ubuntu</title>
-      <link>https://www.sanketkarve.com/blog/install-ubuntu-software/</link>
+      <link>http://www.sanketkarve.com/blog/install-ubuntu-software/</link>
       <pubDate>Sat, 05 Aug 2017 18:46:26 +0530</pubDate>
       
-      <guid>https://www.sanketkarve.com/blog/install-ubuntu-software/</guid>
+      <guid>http://www.sanketkarve.com/blog/install-ubuntu-software/</guid>
       <description>You have freshly install Ubuntu on you system and thinking that there are lot of software and packages you want to install to get back to work ASAP. Here is quick checklist for the Developer for all software and packages you will need. &amp;nbsp;
 1. Update and Upgrade On fresh installation many software and packages does not provide latest updates, which you can obtain by using sudo apt-get update command.</description>
     </item>

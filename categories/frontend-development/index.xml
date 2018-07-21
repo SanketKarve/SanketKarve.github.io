@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vue.js on Sanketkumar Karve</title>
-    <link>http://www.sanketkarve.com/categories/vue.js/</link>
-    <description>Recent content in Vue.js on Sanketkumar Karve</description>
+    <title>Frontend Development on Sanketkumar Karve</title>
+    <link>http://www.sanketkarve.com/categories/frontend-development/</link>
+    <description>Recent content in Frontend Development on Sanketkumar Karve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Jul 2018 15:56:43 +0530</lastBuildDate>
     
-	<atom:link href="http://www.sanketkarve.com/categories/vue.js/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.sanketkarve.com/categories/frontend-development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       <guid>http://www.sanketkarve.com/blog/vue-rails-integration/</guid>
       <description>To start with Vue.js and Rails 5 integration let have a quick overview of what we are going to do.
 Rails works on Model-View-Controller (MVC) Architecture. Here we will focus on View(V) part of rails. By default, rails support HTML, CSS, and JS but we want to integrate responsive framework to leverage its benefit and make our view more component based. Vue.js will only take care of your view layer.</description>
-    </item>
-    
-    <item>
-      <title>Shareito</title>
-      <link>http://www.sanketkarve.com/projects/shareito/</link>
-      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.sanketkarve.com/projects/shareito/</guid>
-      <description>beta.shareito.com Oct 2017 - Present Shareito help employee to onboarding projects and getting access to resources in less amount of time. Shareito is integrated with many popular applications like G-Suite, GitHub, AWS, Office- 365 and Bitbucket.</description>
     </item>
     
   </channel>
