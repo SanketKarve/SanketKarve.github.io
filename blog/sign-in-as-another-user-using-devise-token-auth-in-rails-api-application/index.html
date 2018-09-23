@@ -1,0 +1,1303 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http://www.sanketkarve.com/"
+        },
+        "articleSection" : "blog",
+        "name" : "Sign in as Another User Using Devise Token Auth in Rails Api Application",
+        "headline" : "Sign in as Another User Using Devise Token Auth in Rails Api Application",
+        "description" : "Guide on how to sign in as another user if you are admin using devise token auth in rails API application",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2018",
+        "datePublished": "2018-09-23 17:22:31 &#43;0530 IST",
+        "dateModified" : "2018-09-23 17:22:31 &#43;0530 IST",
+        "url" : "http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/",
+        "wordCount" : "502",
+        "keywords" : [ "tutorial","Blog" ]
+    }
+    </script>
+        
+            
+                <title>Sign in as Another User Using Devise Token Auth in Rails Api Application</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.40.1" />
+        
+
+
+        
+            <meta name="author" content="Sanketkumar Karve">
+        
+        
+            <meta name="description" content="Guide on how to sign in as another user if you are admin using devise token auth in rails API application">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sign in as Another User Using Devise Token Auth in Rails Api Application"/>
+<meta name="twitter:description" content="Guide on how to sign in as another user if you are admin using devise token auth in rails API application"/>
+<meta name="twitter:site" content="@KarveSanket"/>
+
+        <meta property="og:title" content="Sign in as Another User Using Devise Token Auth in Rails Api Application" />
+<meta property="og:description" content="Guide on how to sign in as another user if you are admin using devise token auth in rails API application" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/" />
+
+
+
+<meta property="article:published_time" content="2018-09-23T17:22:31&#43;05:30"/>
+
+<meta property="article:modified_time" content="2018-09-23T17:22:31&#43;05:30"/>
+
+
+
+
+
+
+
+
+
+
+
+        <meta property="og:image" content="http://www.sanketkarve.com//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="Sign in as Another User Using Devise Token Auth in Rails Api Application">
+<meta itemprop="description" content="Guide on how to sign in as another user if you are admin using devise token auth in rails API application">
+
+
+<meta itemprop="datePublished" content="2018-09-23T17:22:31&#43;05:30" />
+<meta itemprop="dateModified" content="2018-09-23T17:22:31&#43;05:30" />
+<meta itemprop="wordCount" content="502">
+
+
+
+<meta itemprop="keywords" content="tutorial," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="http://www.sanketkarve.com/css/main.css">
+            <link rel="stylesheet" href="http://www.sanketkarve.com/css/add-on.css">
+            <link rel="stylesheet" href="http://www.sanketkarve.com/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/monokai-sublime.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-98630905-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="http://www.sanketkarve.com/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="http://www.sanketkarve.com/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://www.sanketkarve.com/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://www.sanketkarve.com/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://www.sanketkarve.com/projects/">
+                            <i class="fa fa-list">&nbsp;</i>Projects
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://www.sanketkarve.com/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://www.sanketkarve.com/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="http://www.sanketkarve.com/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="http://www.sanketkarve.com/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="http://www.sanketkarve.com/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.sanketkarve.com/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.sanketkarve.com/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.sanketkarve.com/projects/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Projects
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.sanketkarve.com/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.sanketkarve.com/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/">Sign in as Another User Using Devise Token Auth in Rails Api Application</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-09-23'>
+                                    September 23, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="http://www.sanketkarve.com/blog/vue-rails-integration/">Integrate Vue.js with Rails 5 application</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-07-21'>
+                                    July 21, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="http://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/">Create active admin custom forms in Ruby on Rails</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-04-29'>
+                                    April 29, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="http://www.sanketkarve.com/blog/webpack-bundle-size-reduce/">Reduce Webpack Bundle Size in Vue </a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-03-12'>
+                                    March 12, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="http://www.sanketkarve.com/blog/formester-setup/">How to use Formester and set up form on your website</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-08-06'>
+                                    August 6, 2017</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="http://www.sanketkarve.com/blog/formester-setup/" class="image featured">
+            <img src="http://www.sanketkarve.com/img/2017//formester-setup/formester-logo.png" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=http%3a%2f%2fwww.sanketkarve.com%2fblog%2fsign-in-as-another-user-using-devise-token-auth-in-rails-api-application%2f&amp;text=Sign%20in%20as%20Another%20User%20Using%20Devise%20Token%20Auth%20in%20Rails%20Api%20Application&amp;via=KarveSanket" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//plus.google.com/share?url=http%3a%2f%2fwww.sanketkarve.com%2fblog%2fsign-in-as-another-user-using-devise-token-auth-in-rails-api-application%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.sanketkarve.com%2fblog%2fsign-in-as-another-user-using-devise-token-auth-in-rails-api-application%2f&amp;title=Sign%20in%20as%20Another%20User%20Using%20Devise%20Token%20Auth%20in%20Rails%20Api%20Application" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Sanketkumar%20Karve&amp;body=http%3a%2f%2fwww.sanketkarve.com%2fblog%2fsign-in-as-another-user-using-devise-token-auth-in-rails-api-application%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/">Sign in as Another User Using Devise Token Auth in Rails Api Application</a></h1>
+            
+        
+        
+            <p>Guide on how to sign in as another user if you are admin using devise token auth in rails API application</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2018-09-23'>
+            September 23, 2018</time>
+        <span class="author">Sanketkumar Karve</span>
+        
+            <p>3 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+<li>
+  <a href="//twitter.com/share?url=http%3a%2f%2fwww.sanketkarve.com%2fblog%2fsign-in-as-another-user-using-devise-token-auth-in-rails-api-application%2f&amp;text=Sign%20in%20as%20Another%20User%20Using%20Devise%20Token%20Auth%20in%20Rails%20Api%20Application&amp;via=KarveSanket" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//plus.google.com/share?url=http%3a%2f%2fwww.sanketkarve.com%2fblog%2fsign-in-as-another-user-using-devise-token-auth-in-rails-api-application%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.sanketkarve.com%2fblog%2fsign-in-as-another-user-using-devise-token-auth-in-rails-api-application%2f&amp;title=Sign%20in%20as%20Another%20User%20Using%20Devise%20Token%20Auth%20in%20Rails%20Api%20Application" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Sanketkumar%20Karve&amp;body=http%3a%2f%2fwww.sanketkarve.com%2fblog%2fsign-in-as-another-user-using-devise-token-auth-in-rails-api-application%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+      </ul>
+    </section>
+  
+
+  
+
+  <div id="content">
+    
+
+<p>In normal Rails application, Sign in as another user if you are an admin comes in very handy when using devise and active admin. But was unable to find any content for Rails API app using devise token auth gem. As suggest by devise token auth, it uses devise gem for authentication so I looked into devise token auth gem for <code>bypass_sign_in</code> method.
+<br/></p>
+
+<h2 id="1-create-rails-api-application">1. Create Rails API application</h2>
+
+<p>Let&rsquo;s create Rails API application using PostgreSQL database.</p>
+
+<pre><code>rails new demo-app --api --database=postgresql
+</code></pre>
+
+<p>and cd into rails app</p>
+
+<pre><code>cd demo-app
+</code></pre>
+
+<p>Configure database.yml file by adding host, username and password below pool line.</p>
+
+<pre><code>host: localhost
+username: postgresql
+password: &lt;%= ENV['DEMO_APP_PASSWORD']%&gt;
+</code></pre>
+
+<p>Now set up the database by using the command</p>
+
+<pre><code>rake db:create db:migrate
+</code></pre>
+
+<p>Your rails application is set up and you can run the server <code>rails s</code></p>
+
+<h2 id="2-installing-devise-token-auth-gem">2. Installing Devise Token Auth Gem</h2>
+
+<p><a href="https://github.com/lynndylanhurley/devise_token_auth">Devise Token Auth</a> gem is Simple, multi-client and secure token-based authentication for Rails.
+<br/></p>
+
+<p>Add the following to your <code>Gemfile</code>:</p>
+
+<pre><code class="language-ruby">gem 'devise_token_auth'
+</code></pre>
+
+<p>Then install the gem using bundle:</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<h2 id="3-generate-user-model">3. Generate User model</h2>
+
+<pre><code>rails g devise_token_auth:install User auth
+</code></pre>
+
+<p>Above command will create a user model, define routes and include concerns.
+<br/>
+It will also create <code>config/initializers/devise_token_auth.rb</code> file
+<br/></p>
+
+<p>Now run the migration.</p>
+
+<pre><code>rake db:migrate
+</code></pre>
+
+<p>In <code>config/initializers/devise_token_auth.rb</code> file check if <code>config.change_headers_on_each_request</code> is  false. By default it&rsquo;s false but incase of existing app check it.
+<br/></p>
+
+<p>Add bellow line in the <code>config/initializers/devise_token_auth.rb</code> file</p>
+
+<pre><code class="language-ruby">config.bypass_sign_in = true
+</code></pre>
+
+<h2 id="4-create-method-login-as-user">4. Create method login_as_user</h2>
+
+<p>Create new <code>users_controller.rb</code> file. You can create in:</p>
+
+<pre><code>app
+  |-controller
+      |-api
+        |-v1
+          |-users_controller.rb
+</code></pre>
+
+<p>Add following code in <code>users_controller.rb</code> file</p>
+
+<pre><code class="language-ruby">module Api::V1
+  class UsersController &lt; ApplicationController
+    before_action :authenticate_user!
+  
+    def login_as_user
+      if (user_signed_in? &amp;&amp; current_user.role === 'admin')
+        DeviseTokenAuth.bypass_sign_in = true
+        user = User.find_by_uid(params[:uid])
+        current_user = user
+        render json: current_user.create_new_auth_token, status: 200
+      else
+        render json: {message: &quot;Invalid user.&quot;}, status: 400
+      end
+    end
+  end
+end
+</code></pre>
+
+<p>Here we are validating if the current user is signed in and role is an admin.
+Then we are searching for the user whom we have to log in as and set it as the current user.
+Then we call create new authentication token for the new user and pass details as a response.</p>
+
+<p>Add the following in your routes file:</p>
+
+<pre><code class="language-ruby">namespace :api do
+  namespace :v1 do
+    post 'users/login_as_user' =&gt; 'users#login_as_user'
+  end
+end
+</code></pre>
+
+<p>In response to API you will get the following details:</p>
+
+<pre><code class="language-JSON">{
+  access-token: &quot;yBEgPr_i9zP_Nn8aXNPf2Q&quot;,
+  client: &quot;Ri9IsYu8Xg2c9ChHo6Czzw&quot;,
+  expiry: &quot;1538933563&quot;,
+  token-type: &quot;Bearer&quot;,
+  uid: &quot;test@example.com&quot;
+}
+</code></pre>
+
+<p>You can log in with the new token.</p>
+
+<h2 id="5-tips-on-how-to-handle-in-the-frontend">5. Tips on how to handle in the frontend</h2>
+
+<ul>
+<li>When you log in as <code>admin</code> you save your <code>access-token</code>, <code>client</code> and <code>uid</code> as <code>current_user</code> in local storage.</li>
+<li>Before calling <code>login_as_user</code> API, save the admin details as <code>current_admin</code> in local storage</li>
+<li>On calling the API you can store that new user details in <code>current_user</code> in local storage.</li>
+<li>Likewise, to switch back to admin you can the API again with admin uid and set admin as <code>current_user</code></li>
+</ul>
+
+<h2 id="6-few-handy-tips">6. Few handy tips</h2>
+
+<ul>
+<li>If you are facing an issue of token expires quickly that you can increase the expiration time by
+adding <code>config.token_lifespan = 2.weeks</code> in <code>config/initializers/devise_token_auth.rb</code> file.</li>
+</ul>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="http://www.sanketkarve.com/categories/web-development">Web Development</a></li>
+                
+                
+                <li><a class="article-category-link" href="http://www.sanketkarve.com/categories/devise-token-auth">Devise Token Auth</a></li>
+                
+                
+                <li><a class="article-category-link" href="http://www.sanketkarve.com/categories/ruby-on-rails">Ruby on Rails</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="http://www.sanketkarve.com/tags/tutorial">tutorial</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-sanketkarve-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+    
+        <li><a href="http://www.sanketkarve.com/blog/vue-rails-integration/"
+                class="button big previous">Integrate Vue.js with Rails 5 application</a></li>
+    
+
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='http://www.sanketkarve.com/' class="logo"><img src="http://www.sanketkarve.com/img/main/logo.jpg" alt="Sanket Karve" /></a>
+      
+    
+    
+      <header>
+        <h2>Sanketkumar Karve</h2>
+        <p>Web Developer | Blogger | Freelancer</p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+          
+    <li><a href="http://www.sanketkarve.com/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/SanketKarve" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+  <li><a href="//stackoverflow.com/users/7801874/sanket-karve" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+  <li><a href="//bitbucket.com/SanketKarve" target="_blank" title="Bitbucket" class="fa fa-bitbucket"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/sanketkumarkarve/" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/sanket.karve.3" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+  <li><a href="//plus.google.com/109675864557183334664" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/KarveSanket" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/">Sign in as Another User Using Devise Token Auth in Rails Api Application</a>
+              </h3>
+              
+              <time class="published" datetime='2018-09-23'>
+                September 23, 2018
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="http://www.sanketkarve.com/blog/vue-rails-integration/">Integrate Vue.js with Rails 5 application</a>
+              </h3>
+              
+              <time class="published" datetime='2018-07-21'>
+                July 21, 2018
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="http://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/">Create active admin custom forms in Ruby on Rails</a>
+              </h3>
+              
+              <time class="published" datetime='2018-04-29'>
+                April 29, 2018
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="http://www.sanketkarve.com/blog/webpack-bundle-size-reduce/">Reduce Webpack Bundle Size in Vue </a>
+              </h3>
+              
+              <time class="published" datetime='2018-03-12'>
+                March 12, 2018
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="http://www.sanketkarve.com/blog/formester-setup/">How to use Formester and set up form on your website</a>
+              </h3>
+              
+              <time class="published" datetime='2017-08-06'>
+                August 6, 2017
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="http://www.sanketkarve.com/blog/formester-setup/" class="image featured">
+            <img src="http://www.sanketkarve.com/img/2017//formester-setup/formester-logo.png" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="http://www.sanketkarve.com/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/web-development/">Web Development</a>
+                <span style="float:right;">10</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/ruby-on-rails/">Ruby on Rails</a>
+                <span style="float:right;">6</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/api/">API</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/forms/">Forms</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/blog/">Blog</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/vue.js/">Vue.js</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/active-admin/">Active Admin</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/devise-token-auth/">Devise Token Auth</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/frontend-development/">Frontend Development</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/integration/">Integration</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/ubuntu/">Ubuntu</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/vue/">Vue</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="http://www.sanketkarve.com/categories/webpack/">Webpack</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>About</h3>
+      <p>I am passionate web application developer. I like to learn and work with new technologies and I am looking forward for more. I believe that  “If you are not learning new things then you are not growing, So Keep learning!!  Keep hacking!!” I looking forward to meet new awesome people and work with them.</p>
+      <a href="http://www.sanketkarve.com/about/" class="button">Learn More</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="http://www.sanketkarve.com/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/SanketKarve" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+  <li><a href="//stackoverflow.com/users/7801874/sanket-karve" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+  <li><a href="//bitbucket.com/SanketKarve" target="_blank" title="Bitbucket" class="fa fa-bitbucket"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/sanketkumarkarve/" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/sanket.karve.3" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+  <li><a href="//plus.google.com/109675864557183334664" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/KarveSanket" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2018
+        
+          Sanketkumar Karve
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="http://www.sanketkarve.com/js/util.js"></script>
+      <script src="http://www.sanketkarve.com/js/main.js"></script>
+      <script src="http://www.sanketkarve.com/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

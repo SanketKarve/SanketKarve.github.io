@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/</loc>
+    <lastmod>2018-09-23T17:22:31+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.sanketkarve.com/blog/vue-rails-integration/</loc>
     <lastmod>2018-07-21T15:56:43+05:30</lastmod>
   </url>
@@ -66,7 +71,7 @@
   
   <url>
     <loc>http://www.sanketkarve.com/blog/</loc>
-    <lastmod>2018-07-21T15:56:43+05:30</lastmod>
+    <lastmod>2018-09-23T17:22:31+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -84,6 +89,12 @@
   
   <url>
     <loc>http://www.sanketkarve.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.sanketkarve.com/categories/devise-token-auth/</loc>
+    <lastmod>2018-09-23T17:22:31+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -112,13 +123,13 @@
   
   <url>
     <loc>http://www.sanketkarve.com/categories/ruby-on-rails/</loc>
-    <lastmod>2018-07-21T15:56:43+05:30</lastmod>
+    <lastmod>2018-09-23T17:22:31+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.sanketkarve.com/</loc>
-    <lastmod>2018-07-21T15:56:43+05:30</lastmod>
+    <lastmod>2018-09-23T17:22:31+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -129,7 +140,7 @@
   
   <url>
     <loc>http://www.sanketkarve.com/tags/tutorial/</loc>
-    <lastmod>2018-07-21T15:56:43+05:30</lastmod>
+    <lastmod>2018-09-23T17:22:31+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -153,7 +164,7 @@
   
   <url>
     <loc>http://www.sanketkarve.com/categories/web-development/</loc>
-    <lastmod>2018-07-21T15:56:43+05:30</lastmod>
+    <lastmod>2018-09-23T17:22:31+05:30</lastmod>
     <priority>0</priority>
   </url>
   

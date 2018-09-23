@@ -6,10 +6,20 @@
     <description>Recent content on Sanketkumar Karve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Jul 2018 15:56:43 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 23 Sep 2018 17:22:31 +0530</lastBuildDate>
     
 	<atom:link href="http://www.sanketkarve.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sign in as Another User Using Devise Token Auth in Rails Api Application</title>
+      <link>http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/</link>
+      <pubDate>Sun, 23 Sep 2018 17:22:31 +0530</pubDate>
+      
+      <guid>http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/</guid>
+      <description>In normal Rails application, Sign in as another user if you are an admin comes in very handy when using devise and active admin. But was unable to find any content for Rails API app using devise token auth gem. As suggest by devise token auth, it uses devise gem for authentication so I looked into devise token auth gem for bypass_sign_in method. 
+1. Create Rails API application Let&amp;rsquo;s create Rails API application using PostgreSQL database.</description>
+    </item>
     
     <item>
       <title>Integrate Vue.js with Rails 5 application</title>
