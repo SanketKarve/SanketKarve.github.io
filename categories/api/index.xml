@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>API on Sanketkumar Karve</title>
-    <link>http://www.sanketkarve.com/categories/api/</link>
+    <link>https://www.sanketkarve.com/categories/api/</link>
     <description>Recent content in API on Sanketkumar Karve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.sanketkarve.com/categories/api/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sanketkarve.com/categories/api/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lead Shuttle</title>
-      <link>http://www.sanketkarve.com/projects/leadshuttle/</link>
+      <link>https://www.sanketkarve.com/projects/leadshuttle/</link>
       <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.sanketkarve.com/projects/leadshuttle/</guid>
+      <guid>https://www.sanketkarve.com/projects/leadshuttle/</guid>
       <description>https://leadshuttle.com April 2018 - Present Lead Shuttle is inbound sales marketing application which is heavily integrated with klenty application. It is customized accouding to sales records with interactive charts.</description>
     </item>
     
     <item>
       <title>Shareito</title>
-      <link>http://www.sanketkarve.com/projects/shareito/</link>
+      <link>https://www.sanketkarve.com/projects/shareito/</link>
       <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.sanketkarve.com/projects/shareito/</guid>
+      <guid>https://www.sanketkarve.com/projects/shareito/</guid>
       <description>beta.shareito.com Oct 2017 - Present Shareito help employee to onboarding projects and getting access to resources in less amount of time. Shareito is integrated with many popular applications like G-Suite, GitHub, AWS, Office- 365 and Bitbucket.</description>
     </item>
     
     <item>
       <title>Formester</title>
-      <link>http://www.sanketkarve.com/projects/formester/</link>
+      <link>https://www.sanketkarve.com/projects/formester/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.sanketkarve.com/projects/formester/</guid>
+      <guid>https://www.sanketkarve.com/projects/formester/</guid>
       <description>https://formester.com March 2017 - Oct 2017 (Product Acquired) Formester help user to create customized forms for various purposes like blogging, Mass digital marketing, subscription, invites and much more. Formester provides simple drag and drop tool to create the form and you can just add a script to your code. It provides features like drag and drop, Mail List, Auto Responder, interactive dashboard, Spam Protection and Integrating with various applications like slack, Gmail, and SalesForce.</description>
     </item>
     

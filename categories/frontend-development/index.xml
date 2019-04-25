@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frontend Development on Sanketkumar Karve</title>
-    <link>http://www.sanketkarve.com/categories/frontend-development/</link>
+    <link>https://www.sanketkarve.com/categories/frontend-development/</link>
     <description>Recent content in Frontend Development on Sanketkumar Karve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Jul 2018 15:56:43 +0530</lastBuildDate>
     
-	<atom:link href="http://www.sanketkarve.com/categories/frontend-development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sanketkarve.com/categories/frontend-development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Integrate Vue.js with Rails 5 application</title>
-      <link>http://www.sanketkarve.com/blog/vue-rails-integration/</link>
+      <link>https://www.sanketkarve.com/blog/vue-rails-integration/</link>
       <pubDate>Sat, 21 Jul 2018 15:56:43 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/blog/vue-rails-integration/</guid>
+      <guid>https://www.sanketkarve.com/blog/vue-rails-integration/</guid>
       <description>To start with Vue.js and Rails 5 integration let have a quick overview of what we are going to do.
 Rails works on Model-View-Controller (MVC) Architecture. Here we will focus on View(V) part of rails. By default, rails support HTML, CSS, and JS but we want to integrate responsive framework to leverage its benefit and make our view more component based. Vue.js will only take care of your view layer.</description>
     </item>

@@ -2,129 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Sanketkumar Karve</title>
-    <link>http://www.sanketkarve.com/categories/</link>
+    <link>https://www.sanketkarve.com/categories/</link>
     <description>Recent content in Categories on Sanketkumar Karve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.sanketkarve.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sanketkarve.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>API</title>
-      <link>http://www.sanketkarve.com/categories/api/</link>
+      <link>https://www.sanketkarve.com/categories/api/</link>
       <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/api/</guid>
+      <guid>https://www.sanketkarve.com/categories/api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Active Admin</title>
-      <link>http://www.sanketkarve.com/categories/active-admin/</link>
+      <link>https://www.sanketkarve.com/categories/active-admin/</link>
       <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/active-admin/</guid>
+      <guid>https://www.sanketkarve.com/categories/active-admin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>http://www.sanketkarve.com/categories/blog/</link>
+      <link>https://www.sanketkarve.com/categories/blog/</link>
       <pubDate>Sun, 06 Aug 2017 20:25:02 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/blog/</guid>
+      <guid>https://www.sanketkarve.com/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devise Token Auth</title>
-      <link>http://www.sanketkarve.com/categories/devise-token-auth/</link>
+      <link>https://www.sanketkarve.com/categories/devise-token-auth/</link>
       <pubDate>Sun, 23 Sep 2018 17:22:31 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/devise-token-auth/</guid>
+      <guid>https://www.sanketkarve.com/categories/devise-token-auth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Forms</title>
-      <link>http://www.sanketkarve.com/categories/forms/</link>
+      <link>https://www.sanketkarve.com/categories/forms/</link>
       <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/forms/</guid>
+      <guid>https://www.sanketkarve.com/categories/forms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Frontend Development</title>
-      <link>http://www.sanketkarve.com/categories/frontend-development/</link>
+      <link>https://www.sanketkarve.com/categories/frontend-development/</link>
       <pubDate>Sat, 21 Jul 2018 15:56:43 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/frontend-development/</guid>
+      <guid>https://www.sanketkarve.com/categories/frontend-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Integration</title>
-      <link>http://www.sanketkarve.com/categories/integration/</link>
+      <link>https://www.sanketkarve.com/categories/integration/</link>
       <pubDate>Sat, 21 Jul 2018 15:56:43 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/integration/</guid>
+      <guid>https://www.sanketkarve.com/categories/integration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby on Rails</title>
-      <link>http://www.sanketkarve.com/categories/ruby-on-rails/</link>
+      <link>https://www.sanketkarve.com/categories/ruby-on-rails/</link>
       <pubDate>Sun, 23 Sep 2018 17:22:31 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/ruby-on-rails/</guid>
+      <guid>https://www.sanketkarve.com/categories/ruby-on-rails/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>http://www.sanketkarve.com/categories/ubuntu/</link>
+      <link>https://www.sanketkarve.com/categories/ubuntu/</link>
       <pubDate>Sat, 05 Aug 2017 18:46:26 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/ubuntu/</guid>
+      <guid>https://www.sanketkarve.com/categories/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vue</title>
-      <link>http://www.sanketkarve.com/categories/vue/</link>
+      <link>https://www.sanketkarve.com/categories/vue/</link>
       <pubDate>Mon, 12 Mar 2018 08:54:20 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/vue/</guid>
+      <guid>https://www.sanketkarve.com/categories/vue/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vue.js</title>
-      <link>http://www.sanketkarve.com/categories/vue.js/</link>
+      <link>https://www.sanketkarve.com/categories/vue.js/</link>
       <pubDate>Sat, 21 Jul 2018 15:56:43 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/vue.js/</guid>
+      <guid>https://www.sanketkarve.com/categories/vue.js/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web Development</title>
-      <link>http://www.sanketkarve.com/categories/web-development/</link>
+      <link>https://www.sanketkarve.com/categories/web-development/</link>
       <pubDate>Sun, 23 Sep 2018 17:22:31 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/web-development/</guid>
+      <guid>https://www.sanketkarve.com/categories/web-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Webpack</title>
-      <link>http://www.sanketkarve.com/categories/webpack/</link>
+      <link>https://www.sanketkarve.com/categories/webpack/</link>
       <pubDate>Mon, 12 Mar 2018 08:54:20 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/categories/webpack/</guid>
+      <guid>https://www.sanketkarve.com/categories/webpack/</guid>
       <description></description>
     </item>
     

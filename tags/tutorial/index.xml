@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on Sanketkumar Karve</title>
-    <link>http://www.sanketkarve.com/tags/tutorial/</link>
+    <link>https://www.sanketkarve.com/tags/tutorial/</link>
     <description>Recent content in Tutorial on Sanketkumar Karve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Sep 2018 17:22:31 +0530</lastBuildDate>
     
-	<atom:link href="http://www.sanketkarve.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sanketkarve.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sign in as Another User Using Devise Token Auth in Rails Api Application</title>
-      <link>http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/</link>
+      <link>https://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/</link>
       <pubDate>Sun, 23 Sep 2018 17:22:31 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/</guid>
+      <guid>https://www.sanketkarve.com/blog/sign-in-as-another-user-using-devise-token-auth-in-rails-api-application/</guid>
       <description>In normal Rails application, Sign in as another user if you are an admin comes in very handy when using devise and active admin. But was unable to find any content for Rails API app using devise token auth gem. As suggest by devise token auth, it uses devise gem for authentication so I looked into devise token auth gem for bypass_sign_in method. 
 1. Create Rails API application Let&amp;rsquo;s create Rails API application using PostgreSQL database.</description>
     </item>
     
     <item>
       <title>Integrate Vue.js with Rails 5 application</title>
-      <link>http://www.sanketkarve.com/blog/vue-rails-integration/</link>
+      <link>https://www.sanketkarve.com/blog/vue-rails-integration/</link>
       <pubDate>Sat, 21 Jul 2018 15:56:43 +0530</pubDate>
       
-      <guid>http://www.sanketkarve.com/blog/vue-rails-integration/</guid>
+      <guid>https://www.sanketkarve.com/blog/vue-rails-integration/</guid>
       <description>To start with Vue.js and Rails 5 integration let have a quick overview of what we are going to do.
 Rails works on Model-View-Controller (MVC) Architecture. Here we will focus on View(V) part of rails. By default, rails support HTML, CSS, and JS but we want to integrate responsive framework to leverage its benefit and make our view more component based. Vue.js will only take care of your view layer.</description>
     </item>
     
     <item>
       <title>Create active admin custom forms in Ruby on Rails</title>
-      <link>http://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</link>
+      <link>https://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</link>
       <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</guid>
+      <guid>https://www.sanketkarve.com/blog/active-admin-custom-form-in-ruby-on-rails/</guid>
       <description>Active Admin is great gem for administration framework for Ruby on Rails applications.
 Here you can find documentation to setup in you Rails applications. Today, Our goal is to create a custom forms in Active Admin. We will create a User and Team model. When a Team is created a user is create along with it and assigned to team. If you are using devise gem and already have existing User model that you can skip the following command to create User model.</description>
     </item>
